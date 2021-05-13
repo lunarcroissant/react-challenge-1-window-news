@@ -1,6 +1,6 @@
-#How to setup this project locally on your computer
+# How to setup this project locally on your computer
 
-##Prerequisites
+## Prerequisites
 
 You can use either npm or yarn to built this project, so please choose one of the two following approaches in case you haven't installed either on them on your system.
 
@@ -17,6 +17,8 @@ Once Node is installed, navigate to the directory where you want to store the pr
 
 ```
 git clone https://github.com/lunarcroissant/react-challenge-1-window-news.git
+
+```
 
 npm
 ```
