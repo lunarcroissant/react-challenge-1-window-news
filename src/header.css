@@ -1,0 +1,197 @@
+.header {
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 20vh;
+  min-height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logoSVG {
+  margin-right: 1em;
+  width: calc(20px + 4vmin);
+  height: calc(20px + 4vmin);
+}
+
+.header__navLink {
+  font-size: calc(1rem + 0.5vw);
+  text-decoration: none;
+  color: var(--primaryColour);
+  margin: 0 2em;
+  padding: 0.5em 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.header__navLink::after {
+  content: "";
+  position: absolute;
+  background: var(--primaryColour);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 400ms ease-in;
+  transition: -webkit-transform 400ms ease-in;
+  transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+}
+
+.header__navLink:hover::after {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.header__utilities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  fill: var(--primaryColour);
+}
+
+.header__utilitiesSVG {
+  height: calc(10px + 3vmin);
+  width: calc(10px + 3vmin);
+  fill: var(--primaryColour);
+  color: var(--primaryColour);
+  cursor: pointer;
+}
+
+.header__mobileNavToggle {
+  fill: var(--primaryColour);
+  z-index: 50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.header__mobileNav {
+  position: fixed;
+  z-index: 20;
+  right: -4000px;
+  top: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 1000ms all ease-in-out;
+  transition: 1000ms all ease-in-out;
+  height: 100vh;
+  background: var(--lightGreyBackground);
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.header__mobileNav--active {
+  position: fixed;
+  z-index: 20;
+  right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  visibility: visible;
+  height: 100vh;
+  background: var(--lightGreyBackground);
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-transition: 800ms all ease-in-out;
+  transition: 800ms all ease-in-out;
+}
+
+.header__mobileNavList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--primaryColour);
+  list-style: none;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+
+.header__mobileNavItem {
+  height: auto;
+  font-size: calc(3rem + 2vw);
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .header__mobileNavToggle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__utilitiesSVG {
+    display: none;
+  }
+}
+/*# sourceMappingURL=header.css.map */

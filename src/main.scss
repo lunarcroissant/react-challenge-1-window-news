@@ -1,0 +1,129 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --backgroundColour: #F9F9F9;
+  --lightGreyBackground: #F6F6F6;
+  --primaryColour: #303030;
+  --mediumGrey: #acacac;
+  --activeHover: #52C3CA;
+  --standardTransition: 500ms all ease-in-out;
+}
+
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+}
+
+h1 {
+  font-size: calc(4rem + 2vw);
+}
+
+h2 {
+  font-size: calc(3rem + 2vw);
+}
+
+h3 {
+  font-size: calc(1rem + 2vw);
+}
+
+h4 {
+  font-size: calc(1rem + 2vw);
+}
+
+h5 {
+  font-size: calc(1.5rem + 0.3vw);
+  font-weight: 100;
+}
+
+p {
+  font-size: calc(1.6rem + 0.5vw);
+}
+
+.mediumText {
+  font-weight: 500;
+}
+
+.button--underlined {
+  all: unset;
+  padding-bottom: 0.25em;
+  border-bottom: 2px var(--primaryColour) solid;
+}
+
+.button--underlined:hover {
+  border-bottom: 2px solid var(--backgroundColour);
+  // transition: var(--standardTransition);
+}
+
+.button--underlined:not(:hover) {
+  transition: var(--standardTransition);
+}
+
+.input--underlined {
+  all: unset;
+  padding-bottom: 0.25em;
+  border-bottom: 2px solid rgba($color: cadetblue, $alpha: 0.4);
+  text-align: center;
+  max-width: 60% !important;
+}
+
+.input--underlined::placeholder {
+  color: cadetblue;
+}
+
+.button--primary {
+  all: unset;
+  padding: 0.5em 2em;
+  background: cadetblue;
+  color: var(--backgroundColour);
+  border-radius: 0.3em;
+  transition: var(--standardTransition);
+
+}
+
+.activeColur:focus {
+  background: cadetblue;
+  color: var(--backgroundColour);
+  transition: var(--standardTransition);
+}
+
+// Utility Classes
+
+.MarginBottom10vh {
+  margin-bottom: 10vh;
+}
+
+.centred {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sectionDivider {
+  height: 2vh;
+  opacity: 0.2;
+  border-radius: 3em;
+  width: 95%;
+  // background: var(--primaryColour);
+  background: cadetblue;
+}
+
+.borderBottom1px {
+  border-bottom: 2px solid rgba($color: #303030, $alpha: 0.4);
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-off {
+    display: none;
+  }
+  
+}

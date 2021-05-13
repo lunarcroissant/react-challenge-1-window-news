@@ -1,0 +1,94 @@
+.card {
+  width: 90vw;
+  height: auto;
+  background: var(--lightGreyBackground);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  border-radius: 1em;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.card:hover {
+  -webkit-transform: translateY(-2vh);
+          transform: translateY(-2vh);
+  -webkit-box-shadow: 0px 8px 2vmin 1vmin var(--mediumGrey);
+          box-shadow: 0px 8px 2vmin 1vmin var(--mediumGrey);
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.card:not(:hover) {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.card__info {
+  min-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 300px;
+  max-height: 80vh;
+  margin: 2em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  padding: 3em;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card__headline {
+  padding-bottom: 1em;
+}
+
+.card__subtitle {
+  padding-bottom: 3em;
+}
+
+.card__image {
+  height: inherit;
+  max-height: 80vh;
+  min-width: 350px;
+  background: cadetblue;
+  border-radius: 1em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__facts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: auto;
+  color: gray;
+}
+
+.card--rightImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: reverse !important;
+      -ms-flex-direction: row-reverse !important;
+          flex-direction: row-reverse !important;
+}
+/*# sourceMappingURL=card.css.map */
