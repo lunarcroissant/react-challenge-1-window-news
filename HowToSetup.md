@@ -16,7 +16,7 @@ or
 Once Node is installed, navigate to the directory where you want to store the project and run (Please note that you may need to delete the existing 'node_modules' in the project folder):
 
 ```
-git clone https://github.com/lunarcroissant/challenge-1-react.git
+git clone https://github.com/lunarcroissant/react-challenge-1-window-news.git
 
 npm
 ```
