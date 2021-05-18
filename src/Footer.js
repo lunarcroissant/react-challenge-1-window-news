@@ -9,21 +9,20 @@ function Footer(props) {
   // const Title = headingLevel;
   // const labelName = 'Newsletter';
 
-  const givenLabel = 'Our newsletter';
-  const footerLinks = ['Data Policy', 'Careers', 'Sign up to our latest updates']
+  const footerLinks = ['Data Policy', 'Careers', 'Sign up to our latest updates'];
 
   return (
-    <div className="footer centred">
+    <footer className="footer centred">
 
       <div className="footer__resources">
-        <h5 className="footer__resourceItem">{footerLinks[0]}</h5>
-        <h5 className="footer__resourceItem">{footerLinks[1]}</h5>
+        <a href="#" className="footer__resourceItem">{footerLinks[0]}</a>
+        <a href="#" className="footer__resourceItem">{footerLinks[1]}</a>
         <InputField label={footerLinks[2]} />
       </div>
-      <h5 className="footer__copyright">{props.footerText}</h5>
+      <a className="footer__copyright">{props.footerText}</a>
 
 
-    </div >
+    </footer >
 
   );
 }

@@ -21,12 +21,12 @@
 
 body {
   justify-content: center;
-  width: 100vw;
   align-items: center;
 }
 
 h1 {
   font-size: calc(4rem + 2vw);
+  all: unset;
 }
 
 h2 {
@@ -34,7 +34,8 @@ h2 {
 }
 
 h3 {
-  font-size: calc(1rem + 2vw);
+  font-size: calc(1.5rem + 0.3vw);
+  font-weight: 100;
 }
 
 h4 {
@@ -51,7 +52,10 @@ p {
 }
 
 .mediumText {
+  all: unset;
   font-weight: 500;
+  font-size: calc(1.5rem + 0.3vw);
+  line-height: 100%;
 }
 
 .button--underlined {
@@ -62,7 +66,6 @@ p {
 
 .button--underlined:hover {
   border-bottom: 2px solid var(--backgroundColour);
-  // transition: var(--standardTransition);
 }
 
 .button--underlined:not(:hover) {
@@ -72,19 +75,19 @@ p {
 .input--underlined {
   all: unset;
   padding-bottom: 0.25em;
-  border-bottom: 2px solid rgba($color: cadetblue, $alpha: 0.4);
+  border-bottom: 2px solid rgba($color: rgb(37, 39, 150), $alpha: 0.4);
   text-align: center;
-  max-width: 60% !important;
+  max-width: 60%;
 }
 
 .input--underlined::placeholder {
-  color: cadetblue;
+  color: rgb(37, 39, 150);
 }
 
 .button--primary {
   all: unset;
   padding: 0.5em 2em;
-  background: cadetblue;
+  background: rgb(37, 39, 150);
   color: var(--backgroundColour);
   border-radius: 0.3em;
   transition: var(--standardTransition);
@@ -92,7 +95,7 @@ p {
 }
 
 .activeColur:focus {
-  background: cadetblue;
+  background: rgb(37, 39, 150);
   color: var(--backgroundColour);
   transition: var(--standardTransition);
 }
@@ -113,8 +116,7 @@ p {
   opacity: 0.2;
   border-radius: 3em;
   width: 95%;
-  // background: var(--primaryColour);
-  background: cadetblue;
+  background: rgb(37, 39, 150);
 }
 
 .borderBottom1px {

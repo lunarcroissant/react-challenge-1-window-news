@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import menuIcon from './static/Menuicon.svg';
+import menuIcon from './assets/Menuicon.svg';
 // import closeIcon from './static/CloseIcon.svg';
 // import './header.css';
 // import { Link } from 'react-router-dom';
 import './MobileNavMotion.js';
 import './header.css';
 import './main.css';
-import Search from './static/search.svg';
+import Search from './assets/search.svg';
 // import { SideBarData } from './SideBarData';
 
 
@@ -21,11 +21,11 @@ function Navigation() {
 
     <div>
 
-      <nav className='header__mobileNavToggle'>
+      <nav aria-label="desktop-navigation-options" className='header__mobileNavToggle'>
         <img src={menuIcon} alt={menuIcon} onClick={showSideBar} ></img>
       </nav>
 
-      <nav className={sideBar ? 'header__mobileNav--active' : 'header__mobileNav'}>
+      <nav aria-label="desktop-navigation-options" className={sideBar ? 'header__mobileNav--active' : 'header__mobileNav'}>
         <ul className='header__mobileNavList'>
           <li className='header__mobileNavItem activeColur'>Latest News</li>
           <li className='header__mobileNavItem activeColur'>About</li>

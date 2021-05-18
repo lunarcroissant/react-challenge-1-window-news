@@ -6,7 +6,7 @@ function NavLink(props) {
 
 
   return (
-    <a class="header__navLink">{props.named}</a>
+    <a class="header__navLink" aria-label={props.ariaLabel} href="#">{props.named}</a>
   );
 
 }

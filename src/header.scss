@@ -23,6 +23,7 @@
     font-size: calc(1rem + 0.5vw);
     text-decoration: none;
     color: var(--primaryColour);
+    // color: red;
     margin: 0 2em;
     padding: 0.5em 0;
     position: relative;
@@ -43,7 +44,12 @@
     transition: transform 400ms ease-in;
   }
 
-  &__navLink:hover::after {
+  &__navLink:hover::after, &__navLink:focus::after {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  &__navLink:hover, &__navLink:focus {
     transform-origin: left;
     transform: scaleX(1);
   }

@@ -56,7 +56,14 @@
   transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
 }
 
-.header__navLink:hover::after {
+.header__navLink:hover::after, .header__navLink:focus::after {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.header__navLink:hover, .header__navLink:focus {
   -webkit-transform-origin: left;
           transform-origin: left;
   -webkit-transform: scaleX(1);

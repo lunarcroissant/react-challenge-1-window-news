@@ -1,5 +1,5 @@
 .card {
-  width: 90vw;
+  max-width: 90vw;
   height: auto;
   background: var(--lightGreyBackground);
   display: -webkit-box;
@@ -62,7 +62,6 @@
   height: inherit;
   max-height: 80vh;
   min-width: 350px;
-  background: cadetblue;
   border-radius: 1em;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -79,16 +78,16 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: auto;
-  color: gray;
+  color: #424242;
 }
 
 .card--rightImage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal !important;
-  -webkit-box-direction: reverse !important;
-      -ms-flex-direction: row-reverse !important;
-          flex-direction: row-reverse !important;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 /*# sourceMappingURL=card.css.map */

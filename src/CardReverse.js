@@ -15,14 +15,14 @@ function CardReverse(props) {
         <p className="card__subtitle">{props.subtitle}</p>
 
         <div className="card__facts">
-          <h5>{props.date}</h5>
-          <h5>Read in {props.readTime} mins</h5>
+          <h3>{props.date}</h3>
+          <h3>Read in {props.readTime} mins</h3>
         </div>
 
       </div>
 
 
-      <img className="card__image" src={'https://source.unsplash.com/random'}></img>
+      <img className="card__image" alt={props.assistiveText} src={'https://source.unsplash.com/random'}></img>
     </article>
   )
 }

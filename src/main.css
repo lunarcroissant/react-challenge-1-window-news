@@ -23,7 +23,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -31,6 +30,7 @@ body {
 
 h1 {
   font-size: calc(4rem + 2vw);
+  all: unset;
 }
 
 h2 {
@@ -38,7 +38,8 @@ h2 {
 }
 
 h3 {
-  font-size: calc(1rem + 2vw);
+  font-size: calc(1.5rem + 0.3vw);
+  font-weight: 100;
 }
 
 h4 {
@@ -55,7 +56,10 @@ p {
 }
 
 .mediumText {
+  all: unset;
   font-weight: 500;
+  font-size: calc(1.5rem + 0.3vw);
+  line-height: 100%;
 }
 
 .button--underlined {
@@ -76,31 +80,31 @@ p {
 .input--underlined {
   all: unset;
   padding-bottom: 0.25em;
-  border-bottom: 2px solid rgba(95, 158, 160, 0.4);
+  border-bottom: 2px solid rgba(37, 39, 150, 0.4);
   text-align: center;
-  max-width: 60% !important;
+  max-width: 60%;
 }
 
 .input--underlined::-webkit-input-placeholder {
-  color: cadetblue;
+  color: #252796;
 }
 
 .input--underlined:-ms-input-placeholder {
-  color: cadetblue;
+  color: #252796;
 }
 
 .input--underlined::-ms-input-placeholder {
-  color: cadetblue;
+  color: #252796;
 }
 
 .input--underlined::placeholder {
-  color: cadetblue;
+  color: #252796;
 }
 
 .button--primary {
   all: unset;
   padding: 0.5em 2em;
-  background: cadetblue;
+  background: #252796;
   color: var(--backgroundColour);
   border-radius: 0.3em;
   -webkit-transition: var(--standardTransition);
@@ -108,7 +112,7 @@ p {
 }
 
 .activeColur:focus {
-  background: cadetblue;
+  background: #252796;
   color: var(--backgroundColour);
   -webkit-transition: var(--standardTransition);
   transition: var(--standardTransition);
@@ -128,7 +132,7 @@ p {
   opacity: 0.2;
   border-radius: 3em;
   width: 95%;
-  background: cadetblue;
+  background: #252796;
 }
 
 .borderBottom1px {

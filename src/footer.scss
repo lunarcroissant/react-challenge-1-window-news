@@ -17,13 +17,36 @@
 
   &__resourceItem {
     color: var(--primaryColour);
-    padding-right: 1em;
-    min-width: 200px;
+    margin: 0 2em;
+    padding: 0.5em 0;
+    // min-width: 200px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: left;
     cursor: pointer;
+    position: relative;
+    font-size: calc(1.5rem + 0.3vw);
+    font-weight: 100;
+    text-decoration: none;
+  }
+
+  &__resourceItem::after {
+    content: "";
+    position: absolute;
+    background: var(--primaryColour);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 400ms ease-in;
+  }
+
+  &__resourceItem:hover::after, &__resourceItem:focus::after {
+    transform-origin: left;
+    transform: scaleX(1);
   }
 
   &__formInput {

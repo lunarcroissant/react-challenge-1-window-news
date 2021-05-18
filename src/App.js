@@ -1,6 +1,5 @@
-import logo from './static/WindowNewsLogo.svg';
-import searchLogo from './static/search.svg';
-import colourInverter from './static/ColourInverter.svg';
+import searchLogo from './assets/search.svg';
+import colourInverter from './assets/ColourInverter.svg';
 import './App.css';
 import './card.css';
 import './header.css';
@@ -27,9 +26,14 @@ function App() {
     <div>
       <Header />
 
-      <Card headline='Two penguins celebrate Brad’s birthday' subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' date='10.02.2021' readTime='9' />
+      <main>
 
-      <CardReverse headline='Another random event happened in some place' subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' date='31.02.3030' readTime='4' />
+        <Card headline='Two penguins celebrate Brad’s birthday' subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' assistiveText='Two penguins jumping off a rock' date='10.02.2021' readTime='9' />
+
+        <CardReverse headline='Another random event happened in some place' subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' assistiveText='A random image off Unsplash' date='31.02.3030' readTime='4' />
+
+
+      </main>
 
       <Footer footerText='&copy;WN 2021 (please don’t steal our trademark)' />
 
