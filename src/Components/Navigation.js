@@ -16,7 +16,7 @@ function Navigation() {
 
     <div>
 
-      <nav aria-label="desktop-navigation-options" className='header__mobileNavToggle' onClick={showSideBar}>
+      <nav id="desktop-navigation-options" className='header__mobileNavToggle' onClick={showSideBar}>
         <MenuIcon />
       </nav>
 
