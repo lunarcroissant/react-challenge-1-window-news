@@ -1,24 +1,19 @@
-import searchLogo from './assets/search.svg';
-import colourInverter from './assets/ColourInverter.svg';
-import './App.css';
-import './card.css';
-import './header.css';
-import './footer.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Utilities from './Utilities';
+import './styles/card.css';
+import './styles/header.css';
+import './styles/footer.css';
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import Utilities from './Utilities';
 
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './header.css';
-import './main.css';
-import Header from './Header';
-import Logo from './Logo';
-import Card from './Card';
-import Footer from './Footer';
-import Nav from './Nav';
-import NavLink from './NavLink';
-import reportWebVitals from './reportWebVitals';
-import CardReverse from './CardReverse';
+// import ReactDOM from 'react-dom';
+import Header from './Components/Header';
+// import Logo from './Logo';
+import Card from './Components/Card';
+import Footer from './Components/Footer';
+// import Nav from './Nav';
+// import NavLink from './NavLink';
+// import reportWebVitals from './reportWebVitals';
+import CardReverse from './Components/CardReverse';
 
 function App() {
   return (
@@ -38,15 +33,6 @@ function App() {
       <Footer footerText='&copy;WN 2021 (please don’t steal our trademark)' />
 
     </div>
-
-    // <>
-    //   <Router>
-    //     <Utilities />
-    //     <Switch>
-    //       <Route path='/' />
-    //     </Switch>
-    //   </Router>
-    // </>
 
   );
 }
