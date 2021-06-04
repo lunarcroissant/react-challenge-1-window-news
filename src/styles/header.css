@@ -123,7 +123,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
 }
 
 .header__mobileNav--active {
@@ -148,7 +147,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
   -webkit-transition: 800ms all ease-in-out;
   transition: 800ms all ease-in-out;
 }

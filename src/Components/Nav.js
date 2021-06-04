@@ -5,7 +5,7 @@ import '../styles/header.css';
 function Nav() {
 
   const linkName = ['Latest News', 'About', 'Contact'];
-  const ariaLabel = ['lastest-news-link', 'about-window-news-link', 'contact-us-link'];
+  const ariaLabel = ['Latest News', 'about-window-news-link', 'contact-us-link'];
 
 
   return (

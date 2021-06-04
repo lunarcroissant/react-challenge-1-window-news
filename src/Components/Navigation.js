@@ -26,7 +26,7 @@ function Navigation() {
           <li className='header__mobileNavItem activeColur'>About</li>
           <li className='header__mobileNavItem activeColur'>Contact</li>
           <li className='sectionDivider'></li>
-          <li className='header__mobileNavItem'><input className='input--underlined' placeholder='Search news' /></li>
+          <li className='header__mobileNavItem'><input className='input--underlined' aria-label="input for searching our articles" placeholder='Search news' /></li>
           <li className='header__mobileNavItem'><button className='button--primary'>Sign In</button></li>
           <li className='sectionDivider'></li>
           <li className='header__mobileNavItem' onClick={showSideBar}>Close</li>
